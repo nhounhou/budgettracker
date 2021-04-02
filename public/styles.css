@@ -49,7 +49,18 @@ tr:nth-child(even) {
   width: 90%;
   margin: 0 auto;
 }
+#add-btn, #sub-btn, #del-btn{
+  margin-top: 10px;
+}
+
+#add-btn {
+  background-color: rgb(137, 230, 137);
+}
+
+#sub-btn {
+  background-color: #ce8080;
+}
 
 #del-btn {
-  background-color: pink;
+  background-color: rgb(199, 170, 224);
 }
