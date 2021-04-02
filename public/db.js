@@ -22,6 +22,7 @@ request.onerror = function(event) {
 };
 
 function saveRecord(record) {
+  console.log('saving while off line')
   // create a transaction on the pending db with readwrite access
   const transaction = db.transaction(["pending"], "readwrite");
 
@@ -30,6 +31,13 @@ function saveRecord(record) {
 
   // add record to your store with add method.
   store.add(record);
+
+  let nameEl = document.querySelector("#t-name");
+  let amountEl = document.querySelector("#t-amount");
+
+  // clear form
+  nameEl.value = "";
+  amountEl.value = "";
 }
 
 function checkDatabase() {
