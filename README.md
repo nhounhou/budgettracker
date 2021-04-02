@@ -38,3 +38,4 @@ npm i
 - [Repo Folder](https://github.com/nhounhou/budgettracker)
 
 # Screen Shot
+![video](./public/images/quickVideo.gif)
